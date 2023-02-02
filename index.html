@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 100px auto;
+            background-color: pink;
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 300px);
+        }
+        .item1 {
+            background-color: aquamarine;
+        }
+        .item2 {
+            background-color: skyblue;
+        }
+        .item3 {
+            background-color: green;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 5px;
+        }
+        .item4 { 
+            background-color:greenyellow;
+        }
+        .item5 { 
+            background-color:mediumseagreen;
+        }
+        .item6 { 
+            background-color:lightcoral;
+        }
+        .sub-item1 {
+            background-color: orange;
+        }
+        .sub-item2 {
+            background-color: purple;
+        }
+        .sub-item3 {
+            background-color: red;
+        }
+        .sub-item4 {
+            background-color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Box1</div>
+        <div class="item2">Box2</div>
+        <div class="item3">
+            <div class="sub-item1">A</div>
+            <div class="sub-item2">B</div>
+            <div class="sub-item3">C</div>
+            <div class="sub-item4">D</div>
+        </div>
+        <div class="item4">Box4</div>
+        <div class="item5">Box5</div>
+        <div class="item6">Box6</div>
+    </div>
+</body>
+</html>
